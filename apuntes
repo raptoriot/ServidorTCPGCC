@@ -1,0 +1,18 @@
+28 Agosto
+el programa receptorTCP, muestra un problema cuando se envia datos(probado enviando de una placa arduino por 3G):
+
+
+______________________________________________________________________________________________________________
+<_io.TextIOWrapper name='<stderr>' mode='w' encoding='UTF-8'> concexion desde ('191.126.134.221', 11840)
+<class 'bytes'>
+<_io.TextIOWrapper name='<stderr>' mode='w' encoding='UTF-8'> recibido "b'415\r\n'"
+415
+
+<_io.TextIOWrapper name='<stderr>' mode='w' encoding='UTF-8'> enviando mensaje de vuelta al cliente
+Traceback (most recent call last):
+  File "recepto2.py", line 27, in <module>
+    data = connection.recv(50)
+ConnectionResetError: [Errno 104] Connection reset by peer
+(receptorTCPUDPemisor) alvaro@linux-hjo8:~/PycharmProjects/receptorTCPUDPemisor>
+_____________________________________________________________________________________________
+Por lo que se ve es cuando envia el mensaje de vuelta
