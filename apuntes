@@ -16,3 +16,4 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 (receptorTCPUDPemisor) alvaro@linux-hjo8:~/PycharmProjects/receptorTCPUDPemisor>
 _____________________________________________________________________________________________
 Por lo que se ve es cuando envia el mensaje de vuelta
+en la nueva version se saca envio de respuesra, si se quiere habilitar esto se debe poener una manejo de errores

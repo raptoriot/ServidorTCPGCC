@@ -30,7 +30,7 @@ while True:
             print(str(data,'utf-8'))
             if data:
                 print(sys.stderr, 'enviando mensaje de vuelta al cliente')
-                connection.sendall(data)
+               # connection.sendall(data)
             else:
                 print(sys.stderr, 'no hay mas datos', client_address)
                 break
